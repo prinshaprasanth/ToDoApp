@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(199, 245, 207);
+}
+.header {
+    /* padding-left: 420px; */
+    width: 100%;
+    /* color: #e4d503; */
+    
+}
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding: 10px;
+    position: relative;
+  }
+  
+  /* Creates a horizontal list with spacing*/
+  
+  li {
+    display: inline-block;
+    /* float: center; */
+    margin-right: 1px;
+    
+  }
+  
+  /*Style for menu links */
+  
+  li a {
+    display: block;
+    min-width: 200px;
+    height: 60px;
+    text-align: center;
+    padding: 15px;
+    line-height: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: black;
+    background: #f6f861;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 200;
+    border-radius: 5px;
+    }
+  
+  /* Hover State for top level links*/
+  
+  li:hover a {
+    background: #e4d503;
+    text-decoration: none;
+    border: grey 2px solid;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  /* Style for dropdown links*/
+  
+  li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 80px;
+    line-height: 40px;
+    padding-top: 15px;
+    margin-left: 5px;
+  }
+  
+  /* Hover state for dropdown links */
+  li:hover ul a:hover {
+    background: rgb(231, 228, 26);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /*Hide dropdown links until they are need */
+  li ul {
+    display: none;
+  }
+  
+  /*Make dropdown links vertical */
+  
+  li ul li {
+    display: block;
+    float: none;
+  }
+  
+  /*Prevent text wrapping */
+  li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 10px;
+    
+  }
+  
+  /*Display the dropdown on hover */
+  ul li a:hover + .hidden,
+  .hidden:hover {
+    display: block;
+  }
